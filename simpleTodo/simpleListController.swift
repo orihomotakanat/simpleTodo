@@ -24,7 +24,7 @@ class simpleListController: UITableViewController {
     
     //viewDidLoadが呼ばれない可能性があるため
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         
         //保存されたelementsを取り出す
         if UserDefaults.standard.object(forKey: "elementsOfArray") != nil {
